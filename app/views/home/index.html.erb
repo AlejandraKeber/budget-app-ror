@@ -1,1 +1,7 @@
-<h1>Home</h1>
+<div class="home-container">
+  <h1 class="home-title">Budget App</h1>
+  <div class="home-actions">
+    <%= link_to "LOG IN", new_user_session_path, class: "home-login" %>
+    <%= link_to "SIGN UP", new_user_registration_path, class: "home-signup" %>
+  </div>
+</div>

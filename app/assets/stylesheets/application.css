@@ -47,3 +47,47 @@ input {
   text-decoration: none;
   color: #434b54;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 100vh;
+}
+
+.home-title {
+  margin-bottom: 100px;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.home-login {
+  background-color: #3778c2;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  width: 50vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.home-signup {
+  background-color: #d1d5da;
+  color: #434b54;
+  height: 50px;
+  cursor: pointer;
+  width: 50vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
