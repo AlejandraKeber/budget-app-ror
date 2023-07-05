@@ -1,4 +1,4 @@
-<div class="groups-title">
+<div class="title">
   <p>CATEGORIES</p>
 </div>
 <div class="groups">
@@ -12,7 +12,7 @@
   </div>
 <% end %>
 </div>
-<div class="add-category">
-  <%= link_to "ADD A CATEGORY", new_group_path, class: "add-category-btn" %>
+<div class="add">
+  <%= link_to "ADD A CATEGORY", new_group_path, class: "add-btn" %>
 </div>
 <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "logout-btn" %>
