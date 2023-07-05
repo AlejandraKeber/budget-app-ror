@@ -1,4 +1,6 @@
-<h2>Add a Payment</h2>
+<div class="group-title">
+<p>ADD A NEW PAYMENT</p>
+</div>
 <%= form_with model: @payment, url: group_payments_path(@group), method: :post, local: true do |form| %>
   <div class="form-payment">
   <p>Choose a category:</p>
@@ -15,7 +17,7 @@
   <div class="form-payment">
     <%= form.text_field :amount, class: "form-control", placeholder: "Enter payment amount" %>
   </div>
-  <div class="form-payment-btn">
-    <%= form.submit "ADD PAYMENT", class: "btn btn-primary" %>
+  <div class="form-payment-btn add">
+    <%= form.submit "ADD PAYMENT", class: "add-btn" %>
   </div>
 <% end %>

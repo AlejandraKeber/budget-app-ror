@@ -137,6 +137,12 @@ input {
 .group-name {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color:#434b54;
+}
+
+.group-name:hover {
+  color:#3778c2;
 }
 
 .group-info {
@@ -160,6 +166,7 @@ input {
 }
 
 .add-btn {
+  background-color: #5fb523;
   border: 1px solid #fff;
   color: #fff;
   height: 40px;
