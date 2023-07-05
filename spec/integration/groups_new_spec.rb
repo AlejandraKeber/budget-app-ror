@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'Groups New', type: :feature do
-    before(:each) do
-      @user = User.create!(name: 'User Test', email: 'test@test.com', password: '123456')
-      @user.save!
-  
-      login_as(@user)
-      visit new_group_path
-    end
+  before(:each) do
+    @user = User.create!(name: 'User Test', email: 'test@test.com', password: '123456')
+    @user.save!
+
+    login_as(@user)
+    visit new_group_path
+  end
 
   describe 'GET /groups/new' do
     it 'has the correct title' do

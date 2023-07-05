@@ -14,7 +14,7 @@ RSpec.describe 'Payments index page', type: :feature do
   it 'displays the title' do
     expect(page).to have_text('PAYMENTS')
   end
-  
+
   it 'displays the payment name' do
     expect(page).to have_text(@payment.name)
   end

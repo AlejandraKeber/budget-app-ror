@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'Payments New', type: :feature do
-    before(:each) do
-      @user = User.create!(name: 'User Test', email: 'test@test.com', password: '123456')
-      @group = Group.create!(name: 'Test Group', icon: 'test.png', user_id: @user.id)
-      @user.save!
-  
-      login_as(@user)
-      visit new_group_payment_path(@group)
-    end
+  before(:each) do
+    @user = User.create!(name: 'User Test', email: 'test@test.com', password: '123456')
+    @group = Group.create!(name: 'Test Group', icon: 'test.png', user_id: @user.id)
+    @user.save!
+
+    login_as(@user)
+    visit new_group_payment_path(@group)
+  end
 
   describe 'GET /payments/new' do
     it 'has the correct title' do

@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Group, type: :model do
   let(:user) { User.create(name: 'Test User', email: 'test@gmail.com') }
-  subject { Group.create(name: 'Test Group', icon: 'group-icon', user: user) }
+  subject { Group.create(name: 'Test Group', icon: 'group-icon', user:) }
 
-  before { subject.save}
+  before { subject.save }
 
   it 'name should be present' do
     subject.name = nil
@@ -19,5 +19,5 @@ RSpec.describe Group, type: :model do
   it 'name should not be too long' do
     subject.name = 'a' * 51
     expect(subject).to_not be_valid
-  end  
+  end
 end

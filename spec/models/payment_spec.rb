@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Payment, type: :model do
   let(:user) { User.create(name: 'Test User', email: 'test@gmail.com') }
-  let(:group) { Group.create(name: 'Test Group', icon: 'group-icon', user: user) }
+  let(:group) { Group.create(name: 'Test Group', icon: 'group-icon', user:) }
   subject { Payment.create(name: 'Test Payment', amount: 10, author_id: user.id, groups: [group]) }
 
   before { subject.save }
