@@ -15,13 +15,14 @@ class PaymentsController < ApplicationController
     @payment.author_id = current_user.id
     puts 'prueba'
     if @payment.save
-      redirect_to group_payments_path(@group), notice: "Payment created successfully"
+      redirect_to group_payments_path(@group), notice: 'Payment created successfully'
     else
       render :new, format: :html
     end
   end
 
   private
+
   def payment_params
     params.require(:payment).permit(:name, :amount, group_ids: [])
   end
