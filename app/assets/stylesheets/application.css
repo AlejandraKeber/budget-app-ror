@@ -138,11 +138,11 @@ input {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color:#434b54;
+  color: #434b54;
 }
 
 .group-name:hover {
-  color:#3778c2;
+  color: #3778c2;
 }
 
 .group-info {
