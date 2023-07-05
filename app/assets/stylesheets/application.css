@@ -91,14 +91,28 @@ input {
   text-decoration: none;
 }
 
-.title {
+.group-title {
   font-family: 'Proxima Nova Bold', sans-serif;
   background-color: #3778c2;
   color: #fff;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
+}
+
+.group-title p {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logout-btn {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
 }
 
 .groups {

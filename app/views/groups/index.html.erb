@@ -1,5 +1,6 @@
-<div class="title">
+<div class="group-title">
   <p>CATEGORIES</p>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "logout-btn" %>
 </div>
 <div class="groups">
 <% @groups.each do |group| %>
@@ -15,4 +16,3 @@
 <div class="add">
   <%= link_to "ADD A CATEGORY", new_group_path, class: "add-btn" %>
 </div>
-<%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "logout-btn" %>
