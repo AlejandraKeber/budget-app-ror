@@ -1,0 +1,21 @@
+<h2>Add a Payment</h2>
+<%= form_with model: @payment, url: group_payments_path(@group), method: :post, local: true do |form| %>
+  <div class="form-payment">
+  <p>Choose a category:</p>
+  <% Group.all.each do |group| %>
+    <label>
+      <%= form.check_box :group_ids, { multiple: true }, group.id, nil %>
+      <%= group.name %>
+    </label>
+  <% end %>
+</div>
+  <div class="form-payment">
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter payment name" %>
+  </div>
+  <div class="form-payment">
+    <%= form.text_field :amount, class: "form-control", placeholder: "Enter payment amount" %>
+  </div>
+  <div class="form-payment-btn">
+    <%= form.submit "ADD PAYMENT", class: "btn btn-primary" %>
+  </div>
+<% end %>

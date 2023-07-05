@@ -104,7 +104,7 @@ input {
 .groups {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin: 10px;
   height: 80vh;
   gap: 20px;
 }
@@ -123,6 +123,17 @@ input {
 .group-name {
   display: flex;
   align-items: center;
+}
+
+.group-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60%;
+}
+
+.group-total-amount {
+  text-align: right;
 }
 
 .add-category {
@@ -146,4 +157,27 @@ input {
   text-decoration: none;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.payments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment {
+  display: flex;
+  gap: 100px;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-amount {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }

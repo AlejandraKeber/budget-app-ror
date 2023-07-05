@@ -5,7 +5,10 @@
 <% @groups.each do |group| %>
   <div class="group">
   <img src="<%= group.icon %>" alt="<%= group.name %>" class="group-icon">
-  <%= link_to group.name, groups_path(group), class: "group-name" %>
+  <div class="group-info">
+  <%= link_to group.name, group_payments_path(group), class: "group-name" %>
+  <p class="group-total-amount">Total payments: $<%= group.payments.sum(:amount) %></p>
+  </div>
   </div>
 <% end %>
 </div>

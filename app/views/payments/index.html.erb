@@ -1,0 +1,17 @@
+<h1>Payments</h1>
+<div class='payments'>
+<% @payments.each do |payment| %>
+  <div class='payment'>
+  <div class='payment-info'
+    <p class='payment-name'><%= payment.name %></p>
+    <p class='payment-date'><%= payment.created_at.strftime("%d %b %Y") %></p>
+  </div>
+  <div class='payment-amount'>
+    <p class='payment-amount'>$<%= payment.amount %></p>
+  </div>
+  </div>
+<% end %>
+</div>
+<div class='add-payment'>
+  <%= link_to 'ADD A PAYMENT', new_group_payment_path(@group), class: 'add-payment-btn' %>
+</div>

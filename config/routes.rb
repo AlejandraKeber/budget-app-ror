@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
-  resources :groups, only: [:index, :new, :create]
+  resources :groups, only: [:index, :new, :create] do
+    resources :payments, only: [:index, :new, :create]
+  end
 end
