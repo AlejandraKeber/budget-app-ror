@@ -47,3 +47,192 @@ input {
   text-decoration: none;
   color: #434b54;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 100vh;
+}
+
+.home-title {
+  margin-bottom: 100px;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.home-login {
+  background-color: #3778c2;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.home-signup {
+  background-color: #d1d5da;
+  color: #434b54;
+  height: 50px;
+  cursor: pointer;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.group-title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  background-color: #3778c2;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.group-title p {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logout-btn {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 80vh;
+  gap: 20px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group-icon {
+  width: 100px;
+  height: auto;
+}
+
+.group-name {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #434b54;
+}
+
+.group-name:hover {
+  color: #3778c2;
+}
+
+.group-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60%;
+}
+
+.group-total-amount {
+  text-align: right;
+}
+
+.add {
+  background-color: #5fb523;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn {
+  background-color: #5fb523;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 40px;
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.payment-title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  background-color: #3778c2;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.back-container {
+  display: flex;
+  align-items: center;
+}
+
+.back-icon {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.payment-t {
+  flex: 1;
+  text-align: center;
+}
+
+.payments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+  height: 80vh;
+  width: 60%;
+}
+
+.payments-total-amount {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.payment-date {
+  margin-left: 50px;
+  font-size: 13px;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-amount {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: bold;
+  text-align: right;
+}

@@ -1,0 +1,25 @@
+<div class='payment-title'>
+  <a href="<%= groups_path %>">
+    <div class="back-container">
+      <img src="<%= asset_path('back-white.png') %>" alt="Back" class="back-icon">
+    </div>
+  </a>
+  <p class="payment-t">PAYMENTS</p>
+</div>
+<div class='payments'>
+  <p class="payments-total-amount">Total payments for <%= @group.name %> category: $<%= @payments.sum(:amount) %></p>
+  <% @payments.each do |payment| %>
+    <div class='payment'>
+      <div class='payment-info'>
+        <p class='payment-name'><%= payment.name %></p>
+        <p class='payment-date'>Created at:<%= payment.created_at.strftime("%d %b %Y") %></p>
+      </div>
+      <div class='payment-amount'>
+        <p class='payment-amount'>Amount: $<%= payment.amount %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class='add'>
+  <%= link_to 'ADD A PAYMENT', new_group_payment_path(@group), class: 'add-btn' %>
+</div>
