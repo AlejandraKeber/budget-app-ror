@@ -50,6 +50,8 @@ The app follow these [design guidelines](https://www.behance.net/gallery/1975915
 
 Here is the link to the [Render Deployment](https://budget-app-ror-8c0k.onrender.com)
 
+Here is a link of the explanation video on [Loom](https://www.loom.com/share/aadfdbdfd4634c859a513c78ab00e922?sid=0ffef2e1-5ce7-4b5a-b558-52efd6be5e24)
+
 ## 🛠 Built With <a name="built-with"></a>
 - `Ruby on Rails`
 

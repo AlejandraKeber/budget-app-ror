@@ -13,7 +13,6 @@ class PaymentsController < ApplicationController
     @group = Group.find(params[:group_id])
     @payment = @group.payments.new(payment_params)
     @payment.author_id = current_user.id
-    puts 'prueba'
     if @payment.save
       redirect_to group_payments_path(@group), notice: 'Payment created successfully'
     else
