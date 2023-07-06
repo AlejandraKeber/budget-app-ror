@@ -46,6 +46,9 @@ OPTIONAL SECTIONS:
 # 📖 budget-app-ror <a name="about-project"></a>
 
 **budget-app-ror** is an app created with Ruby on Rails. It is an app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+The app follow these [design guidelines](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=). Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+
+Here is the link to the [Render Deployment](https://budget-app-ror-8c0k.onrender.com)
 
 ## 🛠 Built With <a name="built-with"></a>
 - `Ruby on Rails`
