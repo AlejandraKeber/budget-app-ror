@@ -1,0 +1,18 @@
+<div class="group-title">
+  <p>CATEGORIES</p>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "logout-btn" %>
+</div>
+<div class="groups">
+<% @groups.each do |group| %>
+  <div class="group">
+  <img src="<%= group.icon %>" alt="<%= group.name %>" class="group-icon">
+  <div class="group-info">
+  <%= link_to group.name, group_payments_path(group), class: "group-name" %>
+  <p class="group-total-amount">Total payments: $<%= group.payments.sum(:amount) %></p>
+  </div>
+  </div>
+<% end %>
+</div>
+<div class="add">
+  <%= link_to "ADD A CATEGORY", new_group_path, class: "add-btn" %>
+</div>
